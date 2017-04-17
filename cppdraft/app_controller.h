@@ -3,6 +3,10 @@
 
 #include <mono.h>
 
+#include "shared_state.hpp"
+#include "agent.hpp"
+#include "scheduler.hpp"
+
 class AppController : public mono::IApplication {
 
     SharedState state;
