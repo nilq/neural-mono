@@ -16,6 +16,7 @@ class Agent : public ITickable, public mono::ui::View {
     mono::geo::Point effectuateDirection();
 
     public:
+        Agent();
         virtual void repaint();
         virtual char const *getName() const {
             return "Agent";
