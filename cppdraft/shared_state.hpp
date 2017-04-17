@@ -7,6 +7,8 @@ struct SharedState {
     SharedState();
     void reset();
 
+    uint16_t agentX;
+
     bool operator == (SharedState const & rhs) const;
     bool operator != (SharedState const & rhs) const;    
 };
