@@ -5,7 +5,7 @@
 
 class ITickable {
     public:
-        virtual void tick (SharedState & state);
+        virtual void tick (SharedState & state) = 0;
 };
 
 #endif
