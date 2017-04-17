@@ -6,7 +6,7 @@ SharedState::SharedState() {
 }
 
 void SharedState::reset() {
-    simulation = Running;
+    simulation = Init;
     nextState  = simulation;
 
     msNow  = 0;

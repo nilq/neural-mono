@@ -10,7 +10,8 @@ class Agent : public ITickable, public mono::ui::View {
 
     void reset();
     void erase();
-    void moveTo(mono::geo::Point position, uint16_t &x);
+    void moveTo(mono::geo::Point position);
+    void step(SharedState &state);
 
     mono::geo::Point decideNextPosition();
     mono::geo::Point effectuateDirection();

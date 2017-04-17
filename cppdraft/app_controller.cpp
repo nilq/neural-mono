@@ -12,6 +12,7 @@ void AppController::reset() {
 }
 
 void AppController::mainLoop() {
+	state.msNow += msResolution;
     scheduler.run(state);
 }
 

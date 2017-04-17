@@ -7,6 +7,7 @@ void Scheduler::add(ITickable *tickable) {
 }
 
 void Scheduler::run(SharedState &state) {
+	state.simulation = state.nextState;
     for(std::vector<ITickable*>::iterator i = tickables.begin(); i != tickables.end(); ++i) {
         (*i) -> tick(state);
     }
