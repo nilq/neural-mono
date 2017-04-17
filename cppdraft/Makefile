@@ -1,7 +1,7 @@
 MONO_PATH=/usr/lib/openmono
 include $(MONO_PATH)/predefines.mk
 
-TARGET=pong
+TARGET=neural
 
 OBJECTS = \
 	$(patsubst %.cpp,%.o,$(wildcard lib/*.cpp)) \
