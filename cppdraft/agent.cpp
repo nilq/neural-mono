@@ -7,7 +7,7 @@ using mono::geo::Rect;
 Agent::Agent() : View(Rect(0, 0, agentRadius * 2, agentRadius * 2)) {}
 
 void Agent::tick(SharedState &state) {
-
+    moveTo(Point(screenHeight / 2 - agentRadius, screenWidth / 2 - agentRadius), state.ballX);
 }
 
 void Agent::moveTo(Point position, uint16_t &x) {
