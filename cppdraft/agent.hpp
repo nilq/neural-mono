@@ -13,6 +13,7 @@ class Agent : public ITickable, public mono::ui::View {
     void moveTo(mono::geo::Point position, uint16_t &x);
 
     mono::geo::Point decideNextPosition();
+    mono::geo::Point effectuateDirection();
 
     public:
         virtual void repaint();

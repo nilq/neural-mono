@@ -4,7 +4,7 @@
 using mono::geo::Point;
 using mono::geo::Rect;
 
-Agent::Agent() : View(Rect(0, 0, agengRadius * 2, agengRadius * 2)) {}
+Agent::Agent() : View(Rect(0, 0, agentRadius * 2, agentRadius * 2)) {}
 
 void Agent::tick(SharedState &state) {
 
@@ -20,12 +20,12 @@ void Agent::moveTo(Point position, uint16_t &x) {
 
 void Agent::erase () {
   painter.setForegroundColor(black);
-  painter.drawFillRect(ViewRect().X(), ViewRect().Y(), agengRadius * 2, agengRadius * 2);
+  painter.drawFillRect(ViewRect().X(), ViewRect().Y(), agentRadius * 2, agentRadius * 2);
 }
 
 void Agent::repaint () {
   painter.setForegroundColor(green);
-  painter.drawFillRect(ViewRect().X(), ViewRect().Y(), agengRadius * 2, agengRadius * 2);
+  painter.drawFillRect(ViewRect().X(), ViewRect().Y(), agentRadius * 2, agentRadius * 2);
 }
 
 Point Agent::decideNextPosition() {
