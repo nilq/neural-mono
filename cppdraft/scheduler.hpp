@@ -2,6 +2,9 @@
 #define scheduler_h
 
 #include <mono.h>
+
+#include <vector>
+#include "shared_state.hpp"
 #include "itickable.hpp"
 
 class Scheduler {
