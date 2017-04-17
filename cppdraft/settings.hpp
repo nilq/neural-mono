@@ -12,6 +12,8 @@ using mono::display::Color;
 
 #define msResolution 1
 
+#define agentRadius 5
+
 #define screenWidth  220
 #define screenHeight 176
 

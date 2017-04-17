@@ -5,7 +5,13 @@
 
 class AppController : public mono::IApplication {
 
+    SharedState state;
+    Scheduler   scheduler;
+    Agent       agent;
     mono::Timer timer;
+
+    void mainLoop();
+    void reset();
 
     public:
         AppController();
