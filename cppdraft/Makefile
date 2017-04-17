@@ -1,4 +1,4 @@
-MONO_PATH=/usr/local/openmono
+MONO_PATH=/usr/lib/openmono
 include $(MONO_PATH)/predefines.mk
 
 TARGET=pong
