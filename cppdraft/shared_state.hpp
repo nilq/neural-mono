@@ -4,11 +4,17 @@
 #include <stdint.h>
 
 struct SharedState {
+    enum Simulation {
+        Running,
+    } simulation;
+
+    Simulation nextState;
+
+    uint32_t msNow;
+    uint16_t agentX;
+    
     SharedState();
     void reset();
-
-    uint16_t agentX;
-
     bool operator == (SharedState const & rhs) const;
     bool operator != (SharedState const & rhs) const;    
 };

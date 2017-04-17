@@ -18,10 +18,6 @@ class Agent : public ITickable, public mono::ui::View {
     public:
         Agent();
         virtual void repaint();
-        virtual char const *getName() const {
-            return "Agent";
-        };
-
         virtual void tick(SharedState &state);
 };
 
