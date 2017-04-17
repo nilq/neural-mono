@@ -8,12 +8,12 @@
 #include "itickable.hpp"
 
 class Scheduler {
-    std::vector<ITickable> tickables;
+    std::vector<ITickable*> tickables;
 
     public:
          Scheduler();
-         void add(ITickable *);
-         void run(SharedState &);
+         void add(ITickable*);
+         void run(SharedState&);
 };
 
 #endif
