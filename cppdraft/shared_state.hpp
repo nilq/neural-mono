@@ -5,6 +5,7 @@
 
 struct SharedState {
     enum Simulation {
+        Init,
         Running,
     } simulation;
 
