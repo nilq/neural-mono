@@ -4,6 +4,9 @@
 #include <mono.h>
 
 class AppController : public mono::IApplication {
+
+    mono::Timer timer;
+
     public:
         AppController();
 

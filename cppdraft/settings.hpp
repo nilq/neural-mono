@@ -10,6 +10,8 @@ using mono::display::Color;
 #define blue  Color(0,   100, 100)
 #define black Color(0,   0,   0)
 
+#define msResolution 1
+
 #define screenWidth  220
 #define screenHeight 176
 

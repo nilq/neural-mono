@@ -1,7 +1,7 @@
 #include "app_controller.h"
-#include "constants.hpp"
+#include "settings.hpp"
 
-AppController::AppController() : timer(msResolution), msGoToBed(msInactivityTimeout) {
+AppController::AppController() : timer(msResolution) {
 
 }
 
