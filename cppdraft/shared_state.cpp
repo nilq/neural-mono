@@ -14,7 +14,7 @@ void SharedState::reset() {
 }
 
 bool SharedState::operator == (SharedState const &rhs) const {
-    return nextState == rhs.nextState && game == rhs.game;
+    return nextState == rhs.nextState && simulation == rhs.simulation;
 }
 
 bool SharedState::operator != (SharedState const &rhs) const {
