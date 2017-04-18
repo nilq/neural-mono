@@ -2,7 +2,9 @@
 #define agent_h
 
 #include <mono.h>
+
 #include "itickable.hpp"
+#include "rng.hpp"
 
 class Agent : public ITickable, public mono::ui::View {
     int directionX;
