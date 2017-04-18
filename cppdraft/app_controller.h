@@ -9,6 +9,7 @@
 
 class AppController : public mono::IApplication {
 
+    Rng         rng;
     SharedState state;
     Scheduler   scheduler;
     Agent       agent;

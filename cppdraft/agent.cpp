@@ -9,7 +9,7 @@ Agent::Agent() : View(Rect(0, 0, agentRadius * 2, agentRadius * 2)) {}
 void Agent::tick(SharedState &state) {
     switch(state.simulation) {
         case SharedState::Init:
-            moveTo(Point(screenHeight / 2 - agentRadius, screenWidth / 2 - agentRadius));
+            moveTo(Point(rng.random31b() % screenWidth, rng.random31b() % screenHeight));
             state.nextState = SharedState::Running;
             return;
         
