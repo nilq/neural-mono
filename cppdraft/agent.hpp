@@ -7,6 +7,8 @@
 #include "rng.hpp"
 
 class Agent : public ITickable, public mono::ui::View {
+    Rng rng;
+
     int directionX;
     int directionY;
 
